@@ -5,7 +5,11 @@
   "keywords": [
     "trailpack",
     "trails",
-    "trailjs"
+    "trailjs",
+    "winston",
+    "logger",
+    "logging",
+    "log"
   ],
   "dependencies": {
     "trailpack": "next",
@@ -16,8 +20,7 @@
     "trails": "next",
     "eslint": "^3",
     "eslint-config-trails": "^3",
-    "mocha": "^3",
-    "smokesignals": "next"
+    "mocha": "^3"
   },
   "scripts": {
     "test": "eslint . && mocha"
