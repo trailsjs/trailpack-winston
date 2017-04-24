@@ -1,0 +1,12 @@
+language: node_js
+node_js:
+- 7.6
+
+deploy:
+  provider: npm
+  email: hello@trailsjs.io
+  api_key:
+    secure: nm2TxqixF2d22lHMIJ6rcmKleV5Wb65ZR2hPS91JOPKDTUwMefLnD1tYE2N5As6sU97A1QuW3yqVhfsXK8aHULuveq5z/f4fnbN8/6qu+6UwfkbMhMsEqQo//oyx+vvwx9OdQjzFq8zal91Br/3Nidgim7Fek5xa7qtNZQbmA5vK/1FYohOa32gTDWCFT1RdbSLUXtjzGoFHNXZg3LzpmfzEGcBe8e//aObvfXFDPEwyXxWJ2eo9UtLBIVrWS0DO0cW34BO57Vt7BjSSETd5+Muewlz7UpF2qJyqOETmaG9URf+t5NFyu5l0tk3Tqp2CEGZKxfZg/aaTrgwxwjeaHdNzfe56DAcrVBkR+AhN5Govcg/MNDqBDlgEOwaljQXCkodqaeb/+2bp+JVhoJI7gCflg18949Pjo7mVU3yxSoPDUECnrxJ8S475oGJxrKo7gJar+DS3O8ej6VNlW0WXzQw7QhL9ol1ABEzAweE+9OLzc/F+sOsEbPfZ8BsYHtjIgM1nQvZ25U4TJ+jPXFfyI8nDkiibO+UmfcICFmOr3uiEFLQbw6x8OCgXPPdTk2582cBxJYrnH7sUI8OTpftwAaL7eRFp2saS5MI5U3+/B5p6kR27lbyq1SZ2AW4whRp/DfVTUlLoXsE20cieWk7u0fQnB++Uo0vrR2rUbc3rORg=
+  on:
+    tags: true
+    repo: trailsjs/trailpack-winston
