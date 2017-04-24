@@ -1,0 +1,31 @@
+{
+  "name": "trailpack-winston",
+  "version": "0.0.0",
+  "main": "index.js",
+  "keywords": [
+    "trailpack",
+    "trails",
+    "trailjs"
+  ],
+  "dependencies": {
+    "trailpack": "next",
+    "winston": "^2.3.1"
+  },
+  "devDependencies": {
+    "lodash": "^4.11.1",
+    "trails": "next",
+    "eslint": "^3",
+    "eslint-config-trails": "^3",
+    "mocha": "^3",
+    "smokesignals": "next"
+  },
+  "scripts": {
+    "test": "eslint . && mocha"
+  },
+  "engines": {
+    "node": ">= 7.6.0"
+  },
+  "eslintConfig": {
+    "extends": "trails"
+  }
+}
