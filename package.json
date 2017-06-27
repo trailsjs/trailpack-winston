@@ -12,7 +12,7 @@
     "log"
   ],
   "dependencies": {
-    "trailpack": "next",
+    "trailpack": "3.0.0-pre.5",
     "winston": "^2.3.1"
   },
   "devDependencies": {
