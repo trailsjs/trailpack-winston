@@ -1,6 +1,8 @@
 language: node_js
 node_js:
-- 7.6
+- 7
+- 8
+- 9
 
 deploy:
   provider: npm
@@ -10,3 +12,4 @@ deploy:
   on:
     tags: true
     repo: trailsjs/trailpack-winston
+    node: 7
