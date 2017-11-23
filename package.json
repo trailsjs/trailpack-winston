@@ -1,6 +1,6 @@
 {
   "name": "trailpack-winston",
-  "version": "1.0.0-rc.2",
+  "version": "3.0.1",
   "main": "index.js",
   "keywords": [
     "trailpack",
@@ -12,13 +12,12 @@
     "log"
   ],
   "dependencies": {
-    "trailpack": "3.0.0-pre.5",
+    "trailpack": "^3",
     "winston": "^2.3.1"
   },
   "devDependencies": {
-    "lodash": "^4.11.1",
-    "trails": "next",
-    "eslint": "^3",
+    "trails": "^3",
+    "eslint": "^4",
     "eslint-config-trails": "^3",
     "mocha": "^3"
   },
