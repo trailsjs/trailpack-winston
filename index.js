@@ -3,24 +3,26 @@ const winston = require('winston')
 
 module.exports = class WinstonTrailpack extends Trailpack {
 
-  bindEvents () {
+  bindEvents() {
     this.app.removeAllListeners('trails:log')
-    this.app.on('trails:log', (level, msg = [ ]) => this.logger.log(level, ...msg))
+    this.app.on('trails:log', (level, msg = []) => this.logger.log(level, ...msg))
   }
 
   /**
    * Logging is a system function, and we thus initialize the logger in the
    * constructor phase, before the Trails app has started.
    */
-  constructor (app) {
+  constructor(app) {
     super(app, {
       config: require('./config'),
       api: require('./api'),
       pkg: require('./package')
     })
 
-    this.logger = new winston.Logger(this.app.config.log)
-    this.bindEvents()
+    app.once('trails:configured', () => {
+      this.logger = new winston.Logger(this.app.config.log)
+      this.bindEvents()
+    })
   }
 }
 
