@@ -1,6 +1,6 @@
 {
   "name": "trailpack-winston",
-  "version": "3.0.1",
+  "version": "3.1.0",
   "main": "index.js",
   "keywords": [
     "trailpack",
@@ -15,8 +15,10 @@
     "trailpack": "^3",
     "winston": "^2.3.1"
   },
+  "peerDependencies": {
+    "trails": "> 3.1.0"
+  },
   "devDependencies": {
-    "trails": "^3",
     "eslint": "^4",
     "eslint-config-trails": "^3",
     "mocha": "^3"

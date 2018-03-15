@@ -5,14 +5,11 @@ describe('Trailpack', () => {
   before(() => {
     pack = global.app.packs.winston
   })
-  it.skip('TODO should be loaded into the app.packs collection', () => {
+  it('should be loaded into the app.packs collection', () => {
     assert(pack)
   })
-  describe('#validate', () => {
-    it.skip('TODO test')
-  })
-  describe('#configure', () => {
-    it.skip('TODO test')
+  it.skip('should create a logger once trails is configured', () => {
+    assert(pack.logger)
   })
   describe('#initialize', () => {
     const oldWrite = process.stdout.write.bind(process.stdout)
