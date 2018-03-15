@@ -8,7 +8,7 @@ describe('Trailpack', () => {
   it('should be loaded into the app.packs collection', () => {
     assert(pack)
   })
-  it.skip('should create a logger once trails is configured', () => {
+  it('should create a logger once trails is configured', () => {
     assert(pack.logger)
   })
   describe('#initialize', () => {
